@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("(__webpack_require__(/*! dotenv */ \"dotenv\").config)();\nmodule.exports = {\n  mongo: process.env.DB || 'mongodb://localhost:27017/todo-list',\n  port: process.env.PORT || 44300\n};\n\n//# sourceURL=webpack://server/./src/config/config.js?");
+eval("(__webpack_require__(/*! dotenv */ \"dotenv\").config)();\nmodule.exports = {\n  mongo: process.env.DB || 'mongodb+srv://Amir17:amir123TR@cluster0.hec27fn.mongodb.net/mongo?retryWrites=true&w=majority',\n  port: process.env.PORT || 44300\n};\n\n//# sourceURL=webpack://server/./src/config/config.js?");
 
 /***/ }),
 
@@ -59,7 +59,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongoose */ \"mongoose\");\n/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);\n\nvar TodoSchema = new (mongoose__WEBPACK_IMPORTED_MODULE_0___default().Schema)({\n  text: {\n    type: String,\n    required: [true, 'The todo text field is required']\n  },\n  isCompleted: {\n    typle: Boolean,\n    \"default\": false\n  }\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mongoose__WEBPACK_IMPORTED_MODULE_0___default().model('Todo', TodoSchema));\n\n//# sourceURL=webpack://server/./src/models/todo.model.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongoose */ \"mongoose\");\n/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);\n\nvar TodoSchema = new (mongoose__WEBPACK_IMPORTED_MODULE_0___default().Schema)({\n  text: {\n    type: String,\n    required: [true, 'The todo text field is required']\n  },\n  isCompleted: {\n    type: Boolean,\n    \"default\": false\n  }\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mongoose__WEBPACK_IMPORTED_MODULE_0___default().model('Todo', TodoSchema));\n\n//# sourceURL=webpack://server/./src/models/todo.model.js?");
 
 /***/ }),
 

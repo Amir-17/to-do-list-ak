@@ -6,7 +6,7 @@ const TodoSchema = new mongoose.Schema ({
         required: [true, 'The todo text field is required']
     },
     isCompleted: {
-        typle: Boolean,
+        type: Boolean,
         default: false
     }
 })

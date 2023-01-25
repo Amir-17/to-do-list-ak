@@ -1,27 +1,11 @@
 import React from "react";
 import ListItem from "./ListItem";
+import "../../assets/styles/List.css";
 
 const List = ({ tasks, handleRemoveTask, handleUpdateTask }) => {
 	return (
-		<div
-			className="List"
-			style={{
-				display: "flex",
-				alignItems: "flex-start",
-				justifyContent: "center",
-				width: "70%",
-				height: "82%",
-				margin: "0 auto",
-				overflowY: "scroll",
-			}}>
-			<div
-				style={{
-					width: "100%",
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "space-around",
-					alignItems: "center",
-				}}>
+		<div className="list">
+			<div className="list_listItem">
 				{tasks && tasks.length > 0
 					? tasks.map((task) => {
 							return (
